@@ -1,7 +1,15 @@
 <script>
 	import Nav from '../components/nav.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
-<Nav />
+<div transition:fade class="p-8 w-3/6 m-auto">
+	<Nav />
+	<slot />
+</div>
 
-<slot />
+<style>
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+</style>
