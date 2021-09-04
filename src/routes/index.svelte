@@ -8,8 +8,10 @@
 	<title>Rocket-Mania!</title>
 </svelte:head>
 <h1 class="text-center text-4xl font-bold">Welcome to Rocket-Mania</h1>
-<div class="my-8 grid grid-cols-3 gap-6 w-3/6 m-auto">
+<div class="my-8 grid grid-cols-3 gap-6 m-auto">
 	{#each $spacexRockets as spacexRocket}
-		<ItemCard name={spacexRocket.name} imageUrl={spacexRocket.flickr_images[0]} />
+		<a href={`/rocket/${spacexRocket.id}`}>
+			<ItemCard name={spacexRocket.name} imageUrl={spacexRocket.flickr_images[0]} />
+		</a>
 	{/each}
 </div>
