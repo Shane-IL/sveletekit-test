@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Rocket-Mania!</title>
+
+		
+
+		<link rel="modulepreload" href="/_app/start-69451e36.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-834b7f88.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-b2472dc8.js">
+		<link rel="modulepreload" href="/_app/pages/index.svelte-e95525cc.js">
+		<link rel="modulepreload" href="/_app/chunks/spacex-store-2cdb92a5.js">
+		<link rel="stylesheet" href="/_app/assets/start-d5b4de3e.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-89163391.css">
+
+		<script type="module">
+			import { start } from "/_app/start-69451e36.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":""},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-b2472dc8.js"),
+						import("/_app/pages/index.svelte-e95525cc.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body class='w-full h-full m-0 p-0 bg-blue-500 text-gray-100'>
+		<div id="svelte">
+
+
+<div class="p-8 w-3/6 m-auto "><nav class="text-lg m-6 font-semibold flex flex-row justify-center last:mr-0"><a class="cursor-pointer mr-4" href="/">Home</a>
+	<a class="cursor-pointer" href="/about">About</a></nav>
+	
+<h1 class="text-center text-4xl font-bold">Welcome to Rocket-Mania</h1>
+<div class="m-auto w-6/12 relative"><input placeholder="Type here to find a rocket" type="search" class="w-full box-border font-medium pl-4 pr-12 m-auto my-8 leading-10 text-gray-800 " value="">
+	<div class="absolute right-4 bottom-10 cursor-pointer">🔍</div></div>
+<div class="my-8 grid grid-cols-3 gap-6 m-auto"></div>
+</div>
+
+
+
+			
+		</div>
+	</body>
+</html>
