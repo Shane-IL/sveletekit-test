@@ -1,5 +1,13 @@
+<script context="module">
+	//
+	export async function load({ page }) {
+		const rocketId = page.params.id;
+		return { props: { rocketId } };
+	}
+</script>
+
 <script>
-	import { spacexRockets } from '../stores/spacex-store';
+	import { spacexRockets } from '../../stores/spacex-store';
 	export let rocketId;
 	const rocketDetails = $spacexRockets.find((rocket) => rocket.id === rocketId);
 </script>
@@ -10,9 +18,9 @@
 	<p>{rocketDetails.description}</p>
 	<div>Dimentions</div>
 	<ul>
-		<li><b>Height: </b>{rocketDetails.height.meters}</li>
-		<li><b>Diameter: </b>{rocketDetails.height.diameter.meters}</li>
-		<li><b>Mass: </b>{rocketDetails.height.diameter.kg}</li>
+		<li><b>Height: </b>{rocketDetails.height.meters}m</li>
+		<li><b>Diameter: </b>{rocketDetails.diameter.meters}m</li>
+		<li><b>Mass: </b>{rocketDetails.mass.kg}kg</li>
 	</ul>
 	<div>Details</div>
 	<ul>

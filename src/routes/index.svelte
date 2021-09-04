@@ -6,9 +6,15 @@
 	let filterParam = '';
 	let filteredData = [];
 
-	$: filteredData = $spacexRockets.filter((rocketDetails) =>
-		rocketDetails.name.toLowerCase().includes(filterParam.toLowerCase())
-	);
+	$: {
+		if (filterParam.length > 0) {
+			filteredData = $spacexRockets.filter((rocketDetails) =>
+				rocketDetails.name.toLowerCase().includes(filterParam.toLowerCase())
+			);
+		} else {
+			filteredData = $spacexRockets;
+		}
+	}
 </script>
 
 <svelte:head>
@@ -20,7 +26,7 @@
 		bind:value={filterParam}
 		placeholder="Type here to find a rocket"
 		type="search"
-		class="w-full box-border font-medium pl-4 pr-12 m-auto my-8 leading-10 text-gray-800"
+		class="w-full box-border font-medium pl-4 pr-12 m-auto my-8 leading-10 text-gray-800 "
 	/>
 	<div class="absolute right-4 bottom-10 cursor-pointer">🔍</div>
 </div>
