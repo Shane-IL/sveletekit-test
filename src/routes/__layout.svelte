@@ -1,11 +1,9 @@
 <script>
 	import Nav from '../components/nav.svelte';
+	import { fade } from 'svelte/transition';
 </script>
 
-<div
-	class="p-8 w-3/6 m-auto
-"
->
+<div transition:fade class="p-8 w-3/6 m-auto">
 	<Nav />
 	<slot />
 </div>

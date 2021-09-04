@@ -1,6 +1,7 @@
 <script>
 	import ItemCard from '../components/itemcard.svelte';
 	import { spacexRockets, fetchAllRockets } from '../stores/spacex-store';
+
 	fetchAllRockets();
 
 	let filterParam = '';
