@@ -1,0 +1,79 @@
+{
+  ".svelte-kit/build/runtime/internal/start.js": {
+    "file": "start-34baca88.js",
+    "src": ".svelte-kit/build/runtime/internal/start.js",
+    "isEntry": true,
+    "imports": [
+      "_vendor-dcaca26e.js"
+    ],
+    "dynamicImports": [
+      "src/routes/__layout.svelte",
+      ".svelte-kit/build/components/error.svelte",
+      "src/routes/index.svelte",
+      "src/routes/rocket/[id].svelte",
+      "src/routes/about.svelte"
+    ],
+    "css": [
+      "assets/start-d5b4de3e.css"
+    ]
+  },
+  "src/routes/__layout.svelte": {
+    "file": "pages/__layout.svelte-69efd5c8.js",
+    "src": "src/routes/__layout.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-dcaca26e.js"
+    ],
+    "css": [
+      "assets/pages/__layout.svelte-89163391.css"
+    ]
+  },
+  ".svelte-kit/build/components/error.svelte": {
+    "file": "error.svelte-8ceaea5e.js",
+    "src": ".svelte-kit/build/components/error.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-dcaca26e.js"
+    ]
+  },
+  "src/routes/index.svelte": {
+    "file": "pages/index.svelte-4dab902c.js",
+    "src": "src/routes/index.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-dcaca26e.js",
+      "_spacex-store-fd1d85c1.js"
+    ]
+  },
+  "src/routes/rocket/[id].svelte": {
+    "file": "pages/rocket/[id].svelte-a0db062d.js",
+    "src": "src/routes/rocket/[id].svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-dcaca26e.js",
+      "_spacex-store-fd1d85c1.js"
+    ]
+  },
+  "src/routes/about.svelte": {
+    "file": "pages/about.svelte-150e0eba.js",
+    "src": "src/routes/about.svelte",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_vendor-dcaca26e.js"
+    ]
+  },
+  "_vendor-dcaca26e.js": {
+    "file": "chunks/vendor-dcaca26e.js"
+  },
+  "_spacex-store-fd1d85c1.js": {
+    "file": "chunks/spacex-store-fd1d85c1.js",
+    "imports": [
+      "_vendor-dcaca26e.js"
+    ]
+  }
+}
