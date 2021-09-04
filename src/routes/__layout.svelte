@@ -2,9 +2,10 @@
 	import Nav from '../components/nav.svelte';
 </script>
 
-<Nav />
-
-<slot />
+<div>
+	<Nav />
+	<slot />
+</div>
 
 <style>
 	@tailwind base;
